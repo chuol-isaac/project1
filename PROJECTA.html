@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ULK University Service Kiosk</title>
+
+    <link rel="stylesheet" href="projecA.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="app-shell">
+
+    <!-- NAVIGATION BAR -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <i class="fa-solid fa-book-open"></i>
+
+            <h2>ULK</h2>
+
+            <span>Kigali Independent<br>University</span>
+        </div>
+
+        <nav>
+            <a class="active" href="#">
+                <i class="fa-solid fa-house"></i> Home
+            </a>
+
+            <a href="#services">Services</a>
+
+            <a href="#about">About ULK</a>
+
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#" class="portal">
+            <i class="fa-solid fa-graduation-cap"></i>
+            Student Portal
+        </a>
+
+    </header>
+
+
+    <div class="main-layout">
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <button class="side-link selected" data-section="services">
+                <i class="fa-solid fa-house"></i>
+                University Services
+            </button>
+
+            <button class="side-link" data-section="library">
+                <i class="fa-solid fa-book-open"></i>
+                Library Info
+            </button>
+
+            <button class="side-link" data-section="timetable">
+                <i class="fa-regular fa-calendar-days"></i>
+                Timetable
+            </button>
+
+            <button class="side-link" data-section="academic">
+                <i class="fa-solid fa-file-lines"></i>
+                Academic Affairs
+            </button>
+
+            <button class="side-link" data-section="support">
+                <i class="fa-solid fa-headset"></i>
+                Student Support
+            </button>
+
+            <button class="side-link" data-section="about">
+                <i class="fa-solid fa-circle-info"></i>
+                About ULK
+            </button>
+
+            <div class="side-photo"></div>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+
+        <main class="content">
+
+            <!-- HERO SECTION -->
+
+            <section class="hero" id="about">
+
+                <div>
+                    <h1>
+                        Multimodal University<br>
+                        Service Kiosk
+                    </h1>
+
+                    <p>
+                        Ask by voice or choose from the options below.
+                    </p>
+
+                    <span class="underline"></span>
+                </div>
+
+                <div class="hero-right">
+
+                    <p class="tagline">
+                        Your University,<br>
+                        Our Priority
+                    </p>
+
+                    <div class="hero-building"></div>
+
+                </div>
+
+            </section>
+
+
+            <!-- VOICE AND QUICK SERVICES -->
+
+            <section class="upper-grid">
+
+                <!-- VOICE ASSISTANT -->
+
+                <div class="panel voice-panel">
+
+                    <div class="panel-label">
+                        <i class="fa-solid fa-microphone"></i>
+                        Voice Assistant
+                    </div>
+
+                    <div class="voice-content">
+
+                        <div class="mic-area">
+
+                            <button class="mic-button" id="micButton">
+                                <i class="fa-solid fa-microphone"></i>
+                            </button>
+
+                            <h3 id="micCaption">
+                                Click to Speak
+                            </h3>
+
+                            <p>
+                                Try: "Library hours",
+                                "This week timetable"
+                            </p>
+
+                        </div>
+
+
+                        <div class="voice-feedback">
+
+                            <div class="listening-box">
+
+                                <span id="listeningText">
+                                    Ready to listen
+                                </span>
+
+                                <div class="wave">
+                                    <i></i><i></i><i></i>
+                                    <i></i><i></i><i></i>
+                                    <i></i><i></i><i></i>
+                                </div>
+
+                            </div>
+
+
+                            <div class="said-box">
+
+                                <i class="fa-solid fa-circle-check"></i>
+
+                                <div>
+
+                                    <strong>You said:</strong>
+
+                                    <p id="heardText">
+                                        "Library hours"
+                                    </p>
+
+                                    <p id="answerText">
+                                        Here is the information...
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- QUICK SERVICES -->
+
+                <div class="panel quick-panel" id="services">
+
+                    <h2>
+                        <i class="fa-solid fa-star"></i>
+                        Quick Services
+                    </h2>
+
+                    <div class="quick-grid">
+
+                        <button class="quick-card purple"
+                        data-topic="library">
+
+                            <i class="fa-solid fa-book-open"></i>
+
+                            <span>
+                                Library<br>Information
+                            </span>
+
+                        </button>
+
+
+                        <button class="quick-card green"
+                        data-topic="timetable">
+
+                            <i class="fa-regular fa-calendar-days"></i>
+
+                            <span>Timetable</span>
+
+                        </button>
+
+
+                        <button class="quick-card orange"
+                        data-topic="student">
+
+                            <i class="fa-solid fa-user-group"></i>
+
+                            <span>
+                                Student<br>Services
+                            </span>
+
+                        </button>
+
+
+                        <button class="quick-card blue"
+                        data-topic="about">
+
+                            <i class="fa-solid fa-circle-info"></i>
+
+                            <span>About ULK</span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- BOTTOM SECTION -->
+
+            <section class="lower-grid">
+
+                <div class="panel recent-panel">
+
+                    <h2>
+                        <i class="fa-regular fa-clock"></i>
+                        Recent Queries
+                    </h2>
+
+                    <ul id="recentList">
+
+                        <li>
+                            <span></span>
+                            Library hours
+                            <small>2 min ago</small>
+                        </li>
+
+                        <li>
+                            <span></span>
+                            This week timetable
+                            <small>5 min ago</small>
+                        </li>
+
+                        <li>
+                            <span></span>
+                            Student registration
+                            <small>10 min ago</small>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="panel access-panel">
+
+                    <h2>
+                        <i class="fa-solid fa-person"></i>
+                        Accessibility
+                    </h2>
+
+                    <p>
+                        If voice is not working, use the buttons
+                        on the left to get the information you need.
+                    </p>
+
+                    <button id="keyboardButton">
+
+                        <i class="fa-regular fa-keyboard"></i>
+
+                        Use Keyboard Instead
+
+                    </button>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer" id="contact">
+
+        <div>
+            <strong>ULK</strong>
+            <span>Kigali Independent University</span>
+        </div>
+
+        <p>Learn · Innovate · Excel</p>
+
+        <a href="mailto:info@ulk.ac.rw">
+            <i class="fa-regular fa-envelope"></i>
+            Need Help? Contact Us
+        </a>
+
+    </footer>
+
+</div>
+
+
+<!-- KEYBOARD MODAL -->
+
+<div class="modal" id="keyboardModal">
+
+    <div class="modal-card">
+
+        <button class="close-modal" id="closeModal">
+            &times;
+        </button>
+
+        <h2>Ask the University Kiosk</h2>
+
+        <p>
+            Type a question, for example: library hours or timetable.
+        </p>
+
+        <form id="questionForm">
+
+            <input
+                type="text"
+                id="questionInput"
+                placeholder="Type your question..."
+            >
+
+            <button type="submit">
+                Ask
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+
+        </form>
+
+        <div class="typed-answer" id="typedAnswer">
+            Your answer will appear here.
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="pro.js"></script>
+
+</body>
+</html>
